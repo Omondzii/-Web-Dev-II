@@ -1,0 +1,54 @@
+<!-- trip-planner.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner - TravelEase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="trip-planner">
+            <h2>Plan Your Trip</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination">
+                    <option value="">Select a destination</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Rome">Rome</option>
+                    <option value="New York">New York</option>
+                </select><br><br>
+                <label for="travel-dates">Travel Dates:</label>
+                <input type="date" id="travel-dates" name="travel-dates"><br><br>
+                <label for="num-travelers">Number of Travelers:</label>
+                <input type="number" id="num-travelers" name="num-travelers"><br><br>
+                <label for="accommodation">Accommodation:</label>
+                <input type="radio" id="hotel" name="accommodation" value="hotel">
+                <label for="hotel">Hotel</label>
+                <input type="radio" id="hostel" name="accommodation" value="hostel">
+                <label for="hostel">Hostel</label>
+                <input type="radio" id="apartment" name="accommodation" value="apartment">
+                <label for="apartment">Apartment</label><br><br>
+                <label for="activities">Activities:</label>
+                <input type="checkbox" id="sightseeing" name="activities" value="sightseeing">
+                <label for="sightseeing">Sightseeing</label>
+                <input type="checkbox" id="adventure" name="activities" value="adventure">
+                <label for="adventure">Adventure</label>
+                <input type="checkbox" id="relaxation" name="activities" value="relaxation">
+                <label for="relaxation">Relaxation</label><br><br>
+                <label for="file-upload">Upload Travel Documents:</label>
+                <input type="file" id="file -upload" name="file-upload"><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
